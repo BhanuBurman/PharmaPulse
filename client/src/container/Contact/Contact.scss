@@ -1,0 +1,189 @@
+.app__contact{
+    // border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    @media screen and (max-width: 900px){
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .form_container{
+        
+        // border: 2px solid green;
+        padding: 0.8rem 2rem;
+        width: 27rem;
+        border-radius: 17px;
+        margin: 0px 5px;
+        background-color: white;
+        h4{
+            color: rgb(255, 136, 0);
+        }
+        h1{
+            margin: 1rem 0px;
+        }
+        .line{
+            margin: 2rem 0px;
+            border: 1px solid rgba(94, 94, 94, 0.317);
+        }
+        form{
+            .user__name{
+                display: flex;
+                .first__name{
+                    font-size: small;
+                    font-weight: 600;
+                    input{
+                        height: 2.2rem;
+                        border: none;
+                        outline: none;
+                        background-color: rgba(197, 197, 197, 0.308);
+                        border-radius: 7px;
+                        padding: 0px 10px;
+                        margin: 1rem 0px;
+                        margin-right: 8px;
+                    }
+                }
+                .last__name{
+                    font-size: small;
+                    font-weight: 600;
+                    input{
+                        height: 2.2rem;
+                        border: none;
+                        outline: none;
+                        background-color: rgba(197, 197, 197, 0.308);
+                        border-radius: 7px;
+                        padding: 0px 10px;
+                        margin: 1rem 0px;
+                        // margin-left: 3px;
+                    }
+                }
+            }
+            .user__email{
+                display: flex;
+                flex-direction: column;
+                font-size: small;
+                    font-weight: 600;
+                    input{
+                        height: 2.2rem;
+                        border: none;
+                        outline: none;
+                        background-color: rgba(197, 197, 197, 0.308);
+                        border-radius: 7px;
+                        padding: 0px 10px;
+                        margin: 1rem 0px;
+                        // margin-left: 3px;
+                    }
+            }
+            .user__message{
+                display: flex;
+                flex-direction: column;
+                font-size: small;
+                    font-weight: 600;
+                textarea{
+                        border: none;
+                        outline: none;
+                        background-color: rgba(197, 197, 197, 0.308);
+                        border-radius: 7px;
+                        padding: 0px 10px;
+                        margin: 1rem 0px;
+                        resize: none;
+                        padding: 1rem;
+                }
+            }
+            button{
+                border: none;
+                font-size: x-large;
+                background-color: var(--secondary-color);
+                color: white;
+                border-radius: 2rem;
+                padding: 6px 1rem;
+            }
+        }
+        @media screen and (max-width: 900px){
+            padding:  0.8rem 0.8rem;
+            width: 100%;
+        }
+    }
+    .img_container{
+        margin: 0px 5px;
+        // border: 2px solid blue;
+        width: 27rem;
+        border-radius: 17px;
+        position: relative;
+        @media screen and (max-width: 900px){
+            margin-top: 20px;
+            width: 100%;
+        }
+        .chat__image{
+            // overflow: hidden;
+            width: 100%;
+            height: 60%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 17px;
+            }
+        }
+        .my__info{
+            background-color: white;
+            // border: 2px solid green;
+            border-radius: 17px;
+            padding: 1rem;
+            margin-top: 2rem;
+            .my__email{
+                padding: 0px 1rem;
+                display: flex;
+                align-items: center;
+                background-color: rgba(197, 197, 197, 0.308);
+                border-radius: 17px;
+                position: relative;
+                text-decoration: none;
+                color: black;
+                img{
+                    // object-fit: cover;
+                    width: 39px;
+                height: 39px;
+                }
+                .email__info{
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h3{
+                        margin-bottom:5px;
+                    }
+                }
+
+            }
+            .my__phone{
+                display: flex;
+                align-items: center;
+                background-color: rgba(197, 197, 197, 0.308);
+                border-radius: 17px;
+                margin-top: 1rem;
+                position: relative;
+                padding: 0px 1rem;
+                text-decoration: none;
+                color: black;
+                img{
+                    object-fit: cover;
+                    width: 39px;
+                height: 39px;
+                }
+                .phone__info{
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                    h3{
+                        margin-bottom:5px;
+                    }
+                }
+
+            }
+        }
+        
+    }
+    
+}

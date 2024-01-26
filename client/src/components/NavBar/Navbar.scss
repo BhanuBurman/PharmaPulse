@@ -1,0 +1,272 @@
+.app__navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 2px solid rgba(81, 81, 81, 0.459);
+    // height: 100%;
+    top: 0;
+    // width: 100% !important;
+    // border: 2px solid red;
+    position: sticky;
+    font-size:larger;
+    padding: 1.5rem 3rem;
+    z-index: 5000;
+    .app__navbar-lists{
+        width: 100%;
+        // border: 2px solid red;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width:800px) {
+            display: none;
+        }
+    }
+    .left-nav{
+        display: flex;
+        
+    }
+    .right-nav{
+        @media screen and (max-width:900px) {
+            width: 33%;
+            
+        }
+    }
+    ul{
+        display: flex;
+        margin: 0rem 2rem;
+        
+    }
+    li{
+        margin: 0px 2rem;
+        
+        a{
+            text-decoration: none;
+            color: black;
+            
+            font-size:large;
+        }
+    }
+    .app__navbar-links{
+        a{
+            transition: all 0.2s ease-in-out;
+            
+            &:hover{
+                color: blue;
+                transform: scale(1.09);
+            }
+            
+            
+        }
+            @media screen and (max-width:900px) {
+            margin: 0px 0px;
+        }
+    }
+    .app__navbar-logo{
+        font-weight: bold;
+        // border: 2px solid blue;
+        align-self: center;
+    }
+    
+    .app__navbar-buttons{
+    //    border: 2px solid blue;
+    width:100%;
+    display: flex;
+    .signup-button{
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        margin: 0px 15px;
+        text-decoration: none;
+            padding:7px 12px;
+            width:7rem;
+            border-radius: 12rem;
+            font-size: 16px;
+            border: 2px solid var(--secondary-color);
+            background-color: white;
+            color: var(--secondary-color);
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                transform: scale(1.09);
+            }
+        }
+        .login-button{
+            display: flex;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                transform: scale(1.09);
+            }
+            font-size: 16px;
+            background-color: var(--secondary-color);
+            margin: 0px 15px;
+            text-decoration: none;
+            width: 7rem;
+            padding:8px 12px;
+            border-radius: 12rem;
+            border-style: none;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
+        @media screen and (max-width:900px) {
+            width: 100%;
+            margin: 0px;
+            font-size: small;
+            height: 2rem;
+            .login-button{
+                margin-right: 0px;
+            }
+            .signup-button{
+                margin-left: 0px;
+            }
+        }
+    }
+    
+    
+}
+.user-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    p{
+        margin: 0px 1rem;
+    }
+    button{
+        border: none;
+        border-radius: 2rem;
+        width: 2.3rem;
+        height: 2.3rem;
+        cursor: pointer;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.user-profile-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Hide the dropdown by default */
+    z-index: 3;
+    border-radius: 5px;
+    width: 11rem;
+    a{
+        // font-size: large;
+        // border: none;
+        // background-color: red;
+        // height: 12px;
+        cursor: pointer;
+    }
+}
+
+.user-profile:hover .user-profile-dropdown {
+    display: flex; /* Show the dropdown on hover */
+    flex-direction: column;
+    position: absolute;
+}
+
+.user-profile p {
+    margin: 0px 1rem;
+}
+
+.user-profile button {
+    border: none;
+    border-radius: 2rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    cursor: pointer;
+    margin-left: 1rem; /* Adjust the margin to create space between the button and dropdown */
+}
+
+/* Add transition for smoother appearance */
+.user-profile-dropdown {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Add your styles for dropdown items as needed */
+.user-profile-dropdown a {
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.user-profile-dropdown a:hover {
+    background-color: #ddd;
+}
+
+.navbar__menu{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-color);
+    // transition: 0.5s;
+    overflow: hidden;
+    svg{
+        width: 70%;
+        height: 70%;
+        color: white;
+    }
+    div{
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 20px rgba(44, 44, 44, 0.457);
+        z-index: 5;
+        // right: -17rem;
+        right: -80rem;
+        position: fixed;
+        padding: 1rem;
+        top: 0px;
+        height: 100vh;
+        width: 40rem;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        
+        svg{
+            width: 35px;
+            height: 35px;
+            color: var(--secondary-color);
+            margin: 0.5rem 1rem;
+            
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            li{
+                margin: 1rem;
+                a{
+                    text-decoration: none;
+                    color: var(--gray-color);
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover{
+                        color: var(--secondary-color);
+                        font-size: 1.3rem;
+                    }
+                }
+
+            }
+        }
+    }
+    
+    @media screen and (min-width:800px) {
+        display: none;
+    }
+}

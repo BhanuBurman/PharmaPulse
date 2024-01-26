@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.478c0d2d.css",
+    "main.js": "/static/js/main.0aa2f03c.js",
+    "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
+    "static/media/Header-img-1.jpg": "/static/media/Header-img-1.b092e196d5d03d9423c2.jpg",
+    "static/media/Header-img-3.jpg": "/static/media/Header-img-3.d7a0b003e3af480587c8.jpg",
+    "static/media/about_img.png": "/static/media/about_img.2deab8fffb4908615fcf.png",
+    "static/media/about__background.jpg": "/static/media/about__background.592e751c1a1762c38c07.jpg",
+    "static/media/Header-img-2.jpg": "/static/media/Header-img-2.25d8bc147ce82bea7fd8.jpg",
+    "static/media/google-logo.png": "/static/media/google-logo.0104047538af4d7f238c.png",
+    "static/media/chat__img.jpg": "/static/media/chat__img.6f1257fe0c746d74b364.jpg",
+    "static/media/user-profile.png": "/static/media/user-profile.73a0bc1f1a3d04cb02ec.png",
+    "static/media/email-icon.png": "/static/media/email-icon.0b8ca07de53b6b9c9dda.png",
+    "static/media/phone-icon.png": "/static/media/phone-icon.febe3fcd5dd3f38422b4.png",
+    "static/media/twitter-logo.png": "/static/media/twitter-logo.cddba83e9b7898f0c09a.png",
+    "static/media/linkin-logo.png": "/static/media/linkin-logo.367e73f523d32c24d9df.png",
+    "index.html": "/index.html",
+    "main.478c0d2d.css.map": "/static/css/main.478c0d2d.css.map",
+    "main.0aa2f03c.js.map": "/static/js/main.0aa2f03c.js.map",
+    "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.478c0d2d.css",
+    "static/js/main.0aa2f03c.js"
+  ]
+}

@@ -1,0 +1,176 @@
+.app__header{
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    // padding-bottom:6rem;
+    align-items: center;
+    height: 100%;
+    // padding: 0em 3rem;
+    .header__info{
+        // border: 2px solid orange;
+        position: absolute;
+        margin: 8rem auto;
+        // height: 100%;
+        width: 60%;
+        z-index: 2;
+        font-family: var(--font-base);
+        text-align: center;
+        @media screen and (max-width:550px){
+            width: 90%;
+            margin-top: 40%;
+        }
+        .header__info-first{
+            color: rgba(255, 255, 255, 0.936);
+            font-weight: 800;
+            font-size: xx-large;
+            @media screen and (max-width:550px){
+                font-size: x-large;
+    
+            }
+        }
+        .header__info-second{
+            display: inline;
+            color: rgba(255, 255, 255, 0.936);
+            font-weight: 400;
+            font-size: x-large;
+            position: relative;
+            top: 22px;
+            @media screen and (max-width:550px){
+                font-size: large;
+    
+            }
+        }
+    }
+    .header__imgs{
+        height: 22rem;
+        // border: 2px solid green;
+        // margin: auto;
+        position: relative;
+        margin-top: 10px;
+        border-radius: 2rem;
+        overflow: hidden; // Hide overflow to create a sliding effect
+        .overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.3); /* Adjust the alpha value to control darkness */
+            z-index: 1; /* Place the overlay above the image */
+        }
+        img{
+            height: 100%; /* Set the height to 100% to fill the container */
+            width: 100%; /* Allow the width to adjust proportionally based on the height */
+            // border-bottom-left-radius:2rem ;
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+            transition: transform 0.5s ease; // Add sliding animation
+            // display: block;
+            
+        }
+        .slider {
+            display: flex; /* Display images in a row */
+            transition: transform 0.5s ease; /* Transition for sliding effect */
+          }
+        .active {
+            transform: translateX(0); // Slide active image to the left
+          }
+          
+    }
+    .header__searchBar{
+        // position: absolute;
+        top: 23.5rem;
+        background-color: white;
+        width: 60%;
+        height: 4rem;
+        box-shadow: 2px 2px 5px rgb(49, 48, 48);
+        border-radius: 5rem;
+        font-size: large;
+        margin-top: -38px;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7rem;
+        margin-right: auto;
+        margin-left: auto;
+        input{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            // border: 2px solid red;
+            outline: none;
+            font-size: large;
+            width:70%;
+            border-style: none;
+            color: rgba(20, 20, 20, 0.852);
+            // font-weight: 700;
+            margin: auto 27px;
+            &:focus{
+                border-style: none;
+            }
+        }
+        button{
+            // position: relative;
+            border-radius: 50%;
+            height: 3rem;
+            width: 3rem;
+            margin: auto 17px;
+            background-color: var(--secondary-color);
+            outline: none;
+            border: none;
+            img{
+                // margin: 10px;
+                height: 30px;
+                width: 30px;
+                background-color: darkred transparent transparent;
+            
+            }
+            transition: all 0.5s ease;
+            &:hover{
+                box-shadow: 2px 2px 2px 2px rgb(138, 138, 255);
+                background-color: rgb(1, 52, 255);
+                transform: scale(1.09);
+
+            }
+            &:active{
+                box-shadow: 0 0 0 0 rgb(138, 138, 255);
+                transform: scale(0.99);
+            }
+        }
+        @media screen and (max-width:650px){
+            width: 80%;
+        }
+    }
+    .loading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .loading__info{
+            position: absolute;
+            top: 33.4rem;
+            font-size: small;
+            @media screen and (max-width:800px){
+                margin-top: 2rem;
+            }
+        }
+        .loading__button{
+            // color: red;
+            // border: 2px solid green;
+            margin-top: 2rem;
+            position: absolute;
+            
+            // top: 5rem;
+            width: 44px;
+            height: 44px;
+            border: 6px solid #b5b5b5;
+            border-top: 6px solid #345bdb;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            box-sizing: border-box;
+            transform-origin: 50% 50%;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+    }
+    
+}

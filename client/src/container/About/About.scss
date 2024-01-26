@@ -1,0 +1,87 @@
+.app__about {
+  // padding: 0em 3rem;
+    position: relative;
+    // border: 2px solid red;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    z-index: 1; /* Ensure the overlay covers the entire content */
+    // margin: 5rem 5rem;
+    width: 100%;
+    .about__img {
+      position: relative;
+      z-index: 100;
+      img {
+          width: 26rem;
+          margin: 1rem 6rem;
+          border-radius: 12px;
+          box-shadow: 5px 5px 15px 2px rgb(62, 62, 62);
+          @media screen and (max-width: 1200px) {
+            margin: 1rem 1rem;
+          }
+          @media screen and (max-width: 1050px) {
+            width: 16rem;
+          }
+          
+        }
+    }
+    
+    .app__about__container {
+      // margin: 0px 5rem;
+      // border: 2px solid blue;
+        overflow: hidden;
+      display: flex;
+      position: relative;
+      border-radius: 2rem;
+      .about__main {
+          margin: auto 6rem;
+          width: 45rem;
+          z-index: 100;
+          color: white;
+          // border: 2px solid rgb(160, 60, 60);
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            h1{
+                font-weight:900;
+                margin: 1rem 0px;
+            }
+            @media screen and (max-width: 1200px) {
+              margin: 1rem 1rem;
+            }
+            @media screen and (max-width: 760px) {
+              width: 20rem;
+            }
+        }
+        @media screen and (max-width: 760px) {
+          flex-direction: column-reverse; 
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    
+    .overlay-about {
+        position: absolute;
+        border-radius: 2rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        
+        z-index:1; 
+        background: rgba(0, 0, 0, 0.4); /* Adjust the alpha value to control darkness */
+    }
+    
+    .about__back-img {
+      // border: 2px solid red;
+      position: absolute;
+      // overflow: hidden;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    
+  }
+  
