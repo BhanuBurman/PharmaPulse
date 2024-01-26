@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
@@ -35,7 +35,8 @@ def get_driver(browser_name='chrome', headless=True):
         if headless:
             options.add_argument('--headless')
         # Automatically download and manage ChromeDriver
-        return webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
+        # return webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
+        return webdriver.Chrome(service=Service(ChromeDriverManager(version="121.0.6167.86").install()), options=options)
 
     elif browser_name.lower() == 'firefox':
         options = webdriver.FirefoxOptions()
