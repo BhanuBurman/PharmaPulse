@@ -36,7 +36,7 @@ def get_driver(browser_name='chrome', headless=True):
             options.add_argument('--headless')
         # Automatically download and manage ChromeDriver
         # return webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
-        return webdriver.Chrome(service=Service(ChromeDriverManager(version="121.0.6167.86").install()), options=options)
+        return webdriver.Chrome(service=Service(), options=options)
 
     elif browser_name.lower() == 'firefox':
         options = webdriver.FirefoxOptions()
