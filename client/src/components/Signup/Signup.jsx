@@ -115,8 +115,8 @@ const Signup = (props) => {
           />
           {password && (
             <div className={`password-strength ${getPasswordStrengthColor()}`}>
-              {getPasswordStrengthColor() === 'red' && 'Weak'}
-              {getPasswordStrengthColor() === 'yellow' && 'Medium'}
+              {getPasswordStrengthColor() === 'red' && 'Weak - minimum 8 characters'}
+              {getPasswordStrengthColor() === 'yellow' && 'Medium - minimum 1 special character'}
               {getPasswordStrengthColor() === 'green' && 'Strong'}
             </div>
           )}
